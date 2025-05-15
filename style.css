@@ -54,11 +54,11 @@ section .topo-do-site .flex {
     line-height: 40px;
 }
 
-.topo-do-site .txt-topo-site h1 span{
+.topo-do-site .txt-topo-site h1 span {
     color: red;
 }
 
-.topo-do-site .txt-topo-site p{
+.topo-do-site .txt-topo-site p {
     color: #fff;
     margin: 40px 0;
     font-size: 22px;
@@ -66,64 +66,163 @@ section .topo-do-site .flex {
 
 }
 
-.topo-do-site .img-topo-site img{
+.topo-do-site .img-topo-site img {
     position: relative;
     animation: flutuar 2s ease-in-out infinite alternate;
-    
+
 
 }
 
-@keyframes flutuar{
-    0%{
+@keyframes flutuar {
+    0% {
         top: 0;
     }
-    100%{
+
+    100% {
         top: 30px;
     }
 }
 
 /* ESTILO DO SOBRE */
 
-section .sobre{
-    padding: 40px 4%;
-
+section .sobre {
+    padding: 80px 4%;
 }
+
+
 
 section.sobre .flex {
     align-items: center;
     gap: 60px;
 }
 
-.sobre .txt-sobre{
-    color: #fff ;
+.sobre .txt-sobre {
+    color: #fff;
 }
 
-.sobre .txt-sobre h2{
+.sobre .txt-sobre h2 {
     font-size: 40px;
     line-height: 40px;
     margin-bottom: 30px;
 }
 
-.sobre .txt-sobre h2 span{
+.sobre .txt-sobre h2 span {
     color: red;
     display: block;
 }
 
-.sobre .txt-sobre p{
+.sobre .txt-sobre p {
     margin: 10px 0;
     text-align: justify;
     font-size: 22px;
 }
 
-.sobre .txt-sobre .btn-social button{
+.sobre .txt-sobre .btn-social button {
     width: 60px;
     height: 60px;
     border-radius: 50%;
     border: 0;
     background-color: red;
     font-size: 22px;
-    cursor:pointer;
+    cursor: pointer;
     margin: 0 5px;
     transition: 2s;
+
+}
+
+/* ESTILO PORTIFÓLIO */
+
+section.portifolio {
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #fff;
+}
+
+section.portifolio .flex {
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.img-port {
+    width: 360px;
+    height: 460px;
+    background-color: cover;
+    background-position: 100% 0%;
+    transition: 5s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+
+.img-port:hover {
+    background-position: 100% 100%;
+
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    opacity: 0;
+    transition: .5s;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+/* ESTILO DE FORMULARIO DE CONTATO */
+
+section.formulario {
+    padding: 80px 4%;
+
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    background-color: rgb(87, 87, 87);
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;
+}
+
+form textarea {
+    resize: none;
+}
+
+form .btn-enviar {
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input {
+    width: 120px;
+    background-color: red;
+    color: black;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
 
 }
