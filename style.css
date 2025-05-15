@@ -39,7 +39,7 @@ header nav ul li {
 /* ESTILO DO TOPO DO SITE */
 
 section.topo-do-site {
-    padding: 200px 4%;
+    padding: 80px 4%;
 }
 
 section .topo-do-site .flex {
@@ -61,12 +61,15 @@ section .topo-do-site .flex {
 .topo-do-site .txt-topo-site p{
     color: #fff;
     margin: 40px 0;
+    font-size: 22px;
+
 
 }
 
 .topo-do-site .img-topo-site img{
     position: relative;
     animation: flutuar 2s ease-in-out infinite alternate;
+    
 
 }
 
@@ -81,8 +84,9 @@ section .topo-do-site .flex {
 
 /* ESTILO DO SOBRE */
 
-section .sorbe{
+section .sobre{
     padding: 40px 4%;
+
 }
 
 section.sobre .flex {
@@ -121,6 +125,5 @@ section.sobre .flex {
     cursor:pointer;
     margin: 0 5px;
     transition: 2s;
-    
 
 }
