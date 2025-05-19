@@ -71,6 +71,9 @@ section .topo-do-site .flex {
 .topo-do-site .img-topo-site img {
     position: relative;
     animation: flutuar 2s ease-in-out infinite alternate;
+    width: 100vh;
+    margin-top: -90px;
+
 
 
 }
@@ -262,3 +265,5 @@ footer .line-footer p a{
     margin-left: 10px;
 
 }
+
+
