@@ -2,6 +2,7 @@
 
 header {
     padding: 10px 4%;
+    
 }
 
 header>.interface {
@@ -40,6 +41,7 @@ header nav ul li {
 
 section.topo-do-site {
     padding: 80px 4%;
+   
 }
 
 section .topo-do-site .flex {
@@ -117,7 +119,7 @@ section.sobre .flex {
     font-size: 22px;
 }
 
-.sobre .txt-sobre .btn-social button {
+.btn-social button {
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -224,5 +226,39 @@ form .btn-enviar input {
     font-weight: 700;
     cursor: pointer;
     transition: .2s;
+
+}
+
+/* ESTILO DO RODAPE */
+footer{
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px #fff;
+
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+
+footer .line-footer{
+    padding: 20px 0;
+   
+}
+
+.borda{
+    border-top: 4px solid red;
+}
+
+
+footer .line-footer p i{
+    color: red;
+    font-size: 22px;
+  
+   
+}
+
+footer .line-footer p a{
+    color: #fff;
+    margin-left: 10px;
 
 }
