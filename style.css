@@ -20,7 +20,7 @@ header a {
     transition: .2s;
 }
 
-header nav.meu-desktop a:hover {
+header nav.menu-desktop a:hover {
     color: #fff;
     transform: scale(1.05);
 }
@@ -29,7 +29,8 @@ header nav ul {
     list-style-type: none;
 }
 
-header nav.meu-desktop ul li {
+
+header nav.menu-desktop ul li {
     display: inline-block;
     padding: 0 40px;
 }
@@ -41,15 +42,27 @@ header nav.meu-desktop ul li {
     font-size: 40px;
 }
 
-.menu-mobile{
+.menu-mobile {
     background-color: black;
     height: 100vh;
     position: fixed;
     top: 0;
     right: 0;
     z-index: 99999;
-    width: 0%;
-    overflow: hidden;
+    width: 70%; /* largura padrão no mobile */
+    max-width: 300px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    overflow-y: auto;
+}
+
+/* Quando o menu está ativo */
+.menu-mobile.ativo {
+    transform: translateX(0%);
+}
+
+.btn-abrir-menu {
+    display: none;
 }
 
 .menu-mobile .btn-fechar{
@@ -62,13 +75,14 @@ header nav.meu-desktop ul li {
 }
 
 
-.menu-mobile nav ul{
-    text-align: right;  
-    
+.menu-mobile nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .menu-mobile nav ul li a{
-    color: #ffff;
+    color: #fff;
     font-size: 20px;
     font-weight: 300;
     padding: 20px 8%;
@@ -89,6 +103,16 @@ header nav.meu-desktop ul li {
     left: 0;
     z-index: 88888;
     display: none;
+}
+@media (max-width: 768px) {
+    .btn-abrir-menu {
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 4%;
+        z-index: 100000;
+        cursor: pointer;
+    }
 }
 
 
@@ -205,7 +229,7 @@ section.portifolio .flex {
 .img-port {
     width: 360px;
     height: 460px;
-    background-color: cover;
+    background-size: cover;
     background-position: 100% 0%;
     transition: 5s;
     cursor: pointer;
