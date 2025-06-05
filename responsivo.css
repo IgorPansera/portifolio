@@ -1,6 +1,5 @@
 @media screen and (max-width: 1020px) {
 
-
   /* CLASSES GERAIS */
 
   .flex {
@@ -28,56 +27,6 @@
     display: none;
   }
 
-  /* MOBILE */
-  @media screen and (max-width: 768px) {
-
-    .topo-do-site .flex {
-      display: flex;
-      /* 👈 adicione isso aqui */
-      flex-direction: column-reverse;
-      text-align: center;
-      gap: 20px;
-      align-items: center;
-      /* Centraliza os itens na vertical */
-    }
-
-
-    .topo-do-site .img-topo-site img {
-      max-width: 300px;
-      width: 100%;
-      margin: 0 auto;
-    }
-
-    .topo-do-site h1 {
-      font-size: 28px;
-       line-height: 34px;
-       margin-bottom: 10px;
-      
-    }
-
-    .topo-do-site p {
-      font-size: 18px;
-      text-align: center;
-       margin: 20px 0;
-    }
-
-    .topo-do-site .txt-topo-site {
-        max-width: 100%;
-    }
-
-    /* Botão de abrir menu visível no mobile */
-    .btn-abrir-menu {
-      display: block;
-      font-size: 40px;
-      color: red;
-      cursor: pointer;
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      z-index: 100001;
-    }
-
-  }
 
   /* Mostra o botão abrir menu no mobile */
   .btn-abrir-menu {
@@ -149,11 +98,6 @@
     padding: 20px 8%;
   }
 
-  .topo-do-site .flex {
-    display: flex;
-    flex-direction: column-reverse;
-    gap: 16px;
-  }
 
   .topo-do-site h1 {
     font-size: 30px;
@@ -212,6 +156,7 @@
     width: 100%;
     max-width: 360px;
     margin: 0 auto;
+    align-items: center;
   }
 
   section.portifolio .flex {
@@ -225,6 +170,8 @@
     flex-direction: column;
     gap: 30px;
   }
+  
+
 
   footer .line-footer {
     text-align: center;
@@ -236,3 +183,52 @@
   }
 
 }
+
+  /* MOBILE */
+  @media screen and (max-width: 768px) {
+
+    section .topo-do-site .flex {
+      flex-direction: column-reverse;
+      text-align: center;
+      align-items: center;
+      gap: 20px;
+  
+    }
+
+
+    .topo-do-site .img-topo-site img {
+      max-width: 300px;
+      width: 100%;
+      margin: 0;
+    }
+
+    .topo-do-site h1 {
+      font-size: 28px;
+       line-height: 34px;
+       margin-bottom: 10px;
+      
+    }
+
+    .topo-do-site p {
+      font-size: 18px;
+      text-align: center;
+       margin: 20px 0;
+    }
+
+    .topo-do-site .txt-topo-site {
+        max-width: 100%;
+    }
+
+    /* Botão de abrir menu visível no mobile */
+    .btn-abrir-menu {
+      display: block;
+      font-size: 40px;
+      color: red;
+      cursor: pointer;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 100001;
+    }
+
+  } 
